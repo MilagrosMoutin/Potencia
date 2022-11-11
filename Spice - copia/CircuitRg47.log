@@ -1,0 +1,121 @@
+Circuit: * C:\Users\Milagros\Documents\GitHub\Potencia\Spice - copia\CircuitRg47.asc
+
+WARNING: Less than two connections to node X1:U2:_DG:VCONST.  This node is used by E:X1:U2:_DG:_CONSTANT.
+WARNING: Less than two connections to node X1:U2:_DS:VCONST.  This node is used by E:X1:U2:_DS:_CONSTANT.
+WARNING: Less than two connections to node X2:U2:_DG:VCONST.  This node is used by E:X2:U2:_DG:_CONSTANT.
+WARNING: Less than two connections to node X2:U2:_DS:VCONST.  This node is used by E:X2:U2:_DS:_CONSTANT.
+WARNING: Less than two connections to node X3:U2:_DG:VCONST.  This node is used by E:X3:U2:_DG:_CONSTANT.
+WARNING: Less than two connections to node X3:U2:_DS:VCONST.  This node is used by E:X3:U2:_DS:_CONSTANT.
+WARNING: Less than two connections to node X4:U2:_DG:VCONST.  This node is used by E:X4:U2:_DG:_CONSTANT.
+WARNING: Less than two connections to node X4:U2:_DS:VCONST.  This node is used by E:X4:U2:_DS:_CONSTANT.
+Instance "m:x4:u2:111": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:x4:u2:111": Width narrower than recommended for a level 1 MOSFET.
+Instance "m:x3:u2:111": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:x3:u2:111": Width narrower than recommended for a level 1 MOSFET.
+Instance "m:x2:u2:111": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:x2:u2:111": Width narrower than recommended for a level 1 MOSFET.
+Instance "m:x1:u2:111": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:x1:u2:111": Width narrower than recommended for a level 1 MOSFET.
+Early termination of direct N-R iteration.
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+Gmin = 1.07374
+vernier = 0.5
+vernier = 0.25
+vernier = 0.125
+vernier = 0.0625
+Gmin = 0.845778
+vernier = 0.03125
+vernier = 0.015625
+vernier = 0.0078125
+vernier = 0.00390625
+Gmin = 0.838403
+vernier = 0.00195313
+vernier = 0.000976563
+vernier = 0.000488281
+Gmin = 0
+Gmin stepping failed
+
+Starting source stepping with srcstepmethod=0
+Source Step = 3.0303%
+Source Step = 12.1212%
+Source Step = 16.0985%
+Source Step = 17.9924%
+Source Step = 19.8864%
+Source Step = 21.7803%
+Source Step = 23.6742%
+vernier = 0.09375
+Source Step = 25.947%
+Source Step = 28.7879%
+Source Step = 31.6288%
+Source Step = 34.4697%
+Source Step = 37.3106%
+vernier = 0.140625
+Source Step = 40.5777%
+Source Step = 44.839%
+Source Step = 49.1004%
+Source Step = 53.3617%
+Source Step = 57.6231%
+vernier = 0.210938
+Source Step = 62.3106%
+Source Step = 68.7027%
+Source Step = 75.0947%
+Source Step = 81.4867%
+Source Step = 87.8788%
+vernier = 0.316406
+Source Step = 94.5904%
+Source stepping succeeded in finding the operating point.
+
+Ignoring empty pin current: Ix(u2:g)
+Ignoring empty pin current: Ix(u2:d)
+Ignoring empty pin current: Ix(u2:s)
+Ignoring empty pin current: Ix(u2:_m:gg1)
+Ignoring empty pin current: Ix(u2:_m:dd1)
+Ignoring empty pin current: Ix(u2:_m:ss2)
+Ignoring empty pin current: Ix(u2:_dg:dp)
+Ignoring empty pin current: Ix(u2:_dg:gn)
+Ignoring empty pin current: Ix(u2:_ds:ps_d)
+Ignoring empty pin current: Ix(u2:_ds:ns_s)
+Ignoring empty pin current: Ix(u2:_d:d)
+Ignoring empty pin current: Ix(u2:_d:s)
+Ignoring empty pin current: Ix(u2:g)
+Ignoring empty pin current: Ix(u2:d)
+Ignoring empty pin current: Ix(u2:s)
+Ignoring empty pin current: Ix(u2:_m:gg1)
+Ignoring empty pin current: Ix(u2:_m:dd1)
+Ignoring empty pin current: Ix(u2:_m:ss2)
+Ignoring empty pin current: Ix(u2:_dg:dp)
+Ignoring empty pin current: Ix(u2:_dg:gn)
+Ignoring empty pin current: Ix(u2:_ds:ps_d)
+Ignoring empty pin current: Ix(u2:_ds:ns_s)
+Ignoring empty pin current: Ix(u2:_d:d)
+Ignoring empty pin current: Ix(u2:_d:s)
+Heightened Def Con from 7.50042e-006 to 7.50042e-006
+Heightened Def Con from 7.50042e-006 to 7.5008e-006
+Heightened Def Con from 7.50089e-006 +to 7.50091e-006
+Heightened Def Con from 7.50091e-006 ++++++++++++++to 7.50316e-006
+Heightened Def Con from 7.50316e-006 to 7.50428e-006
+Heightened Def Con from 5.01872e-005 ++to 5.01912e-005
+Heightened Def Con from 9.28578e-005 +to 9.28628e-005
+Heightened Def Con from 0.000178192 +++to 0.000178195
+Heightened Def Con from 0.000476848 to 0.000476851
+
+Date: Fri Nov 11 05:29:50 2022
+Total elapsed time: 9.232 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 148927
+traniter = 146352
+tranpoints = 52963
+accept = 37585
+rejected = 15408
+matrix size = 165
+fillins = 737
+solver = Normal
+Thread vector: 49.2/20.7[4] 6.4/3.8[4] 10.1/5.3[4] 0.8/1.6[1]  2592/500
+Matrix Compiler1: 96.18 KB object code size  33.9/17.0/[8.4]
+Matrix Compiler2: 24.24 KB object code size  4.1/3.9/[0.9]
+

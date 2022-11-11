@@ -1,0 +1,134 @@
+Circuit: * C:\Users\Milagros\Documents\GitHub\Potencia\Spice - copia\CircuitRg27.asc
+
+WARNING: Less than two connections to node X1:U2:_DG:VCONST.  This node is used by E:X1:U2:_DG:_CONSTANT.
+WARNING: Less than two connections to node X1:U2:_DS:VCONST.  This node is used by E:X1:U2:_DS:_CONSTANT.
+WARNING: Less than two connections to node X2:U2:_DG:VCONST.  This node is used by E:X2:U2:_DG:_CONSTANT.
+WARNING: Less than two connections to node X2:U2:_DS:VCONST.  This node is used by E:X2:U2:_DS:_CONSTANT.
+WARNING: Less than two connections to node X3:U2:_DG:VCONST.  This node is used by E:X3:U2:_DG:_CONSTANT.
+WARNING: Less than two connections to node X3:U2:_DS:VCONST.  This node is used by E:X3:U2:_DS:_CONSTANT.
+WARNING: Less than two connections to node X4:U2:_DG:VCONST.  This node is used by E:X4:U2:_DG:_CONSTANT.
+WARNING: Less than two connections to node X4:U2:_DS:VCONST.  This node is used by E:X4:U2:_DS:_CONSTANT.
+Instance "m:x4:u2:111": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:x4:u2:111": Width narrower than recommended for a level 1 MOSFET.
+Instance "m:x3:u2:111": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:x3:u2:111": Width narrower than recommended for a level 1 MOSFET.
+Instance "m:x2:u2:111": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:x2:u2:111": Width narrower than recommended for a level 1 MOSFET.
+Instance "m:x1:u2:111": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:x1:u2:111": Width narrower than recommended for a level 1 MOSFET.
+Early termination of direct N-R iteration.
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+Gmin = 1.07374
+vernier = 0.5
+vernier = 0.25
+vernier = 0.125
+Gmin = 0.696858
+vernier = 0.0625
+vernier = 0.03125
+vernier = 0.015625
+vernier = 0.0078125
+Gmin = 0.692794
+vernier = 0.00390625
+vernier = 0.00195313
+vernier = 0.000976563
+Gmin = 0.691442
+vernier = 0.000488281
+Gmin = 0
+Gmin stepping succeeded in finding the operating point.
+
+Ignoring empty pin current: Ix(u2:g)
+Ignoring empty pin current: Ix(u2:d)
+Ignoring empty pin current: Ix(u2:s)
+Ignoring empty pin current: Ix(u2:_m:gg1)
+Ignoring empty pin current: Ix(u2:_m:dd1)
+Ignoring empty pin current: Ix(u2:_m:ss2)
+Ignoring empty pin current: Ix(u2:_dg:dp)
+Ignoring empty pin current: Ix(u2:_dg:gn)
+Ignoring empty pin current: Ix(u2:_ds:ps_d)
+Ignoring empty pin current: Ix(u2:_ds:ns_s)
+Ignoring empty pin current: Ix(u2:_d:d)
+Ignoring empty pin current: Ix(u2:_d:s)
+Ignoring empty pin current: Ix(u2:g)
+Ignoring empty pin current: Ix(u2:d)
+Ignoring empty pin current: Ix(u2:s)
+Ignoring empty pin current: Ix(u2:_m:gg1)
+Ignoring empty pin current: Ix(u2:_m:dd1)
+Ignoring empty pin current: Ix(u2:_m:ss2)
+Ignoring empty pin current: Ix(u2:_dg:dp)
+Ignoring empty pin current: Ix(u2:_dg:gn)
+Ignoring empty pin current: Ix(u2:_ds:ps_d)
+Ignoring empty pin current: Ix(u2:_ds:ns_s)
+Ignoring empty pin current: Ix(u2:_d:d)
+Ignoring empty pin current: Ix(u2:_d:s)
+Heightened Def Con from 4.6875e-012 to 1.1e-009
+Heightened Def Con from 0.000171834 to 0.000171834
+Heightened Def Con from 0.000171834 to 0.000171836
+Heightened Def Con from 0.000171838 +to 0.000171839
+Heightened Def Con from 0.000171841 +to 0.000171843
+Heightened Def Con from 0.000171843 to 0.000171843
+Heightened Def Con from 0.000171843 to 0.000171843
+Heightened Def Con from 0.000171844 to 0.000171844
+Heightened Def Con from 0.000171844 to 0.000171846
+Heightened Def Con from 0.000171846 +to 0.000171847
+Heightened Def Con from 0.000171847 to 0.000171847
+Heightened Def Con from 0.000171847 +to 0.000171848
+Heightened Def Con from 0.000171849 +to 0.000171849
+Heightened Def Con from 0.000171849 ++to 0.00017185
+Heightened Def Con from 0.00017185 to 0.000171852
+Heightened Def Con from 0.000171852 +to 0.000171853
+Heightened Def Con from 0.000171853 to 0.000171854
+Heightened Def Con from 0.000171854 +++++to 0.000171855
+Heightened Def Con from 0.000171855 to 0.000171856
+Heightened Def Con from 0.000171856 to 0.000171857
+Heightened Def Con from 0.000171857 to 0.000171858
+Heightened Def Con from 0.000171858 +++++++to 0.000171859
+Heightened Def Con from 0.000171859 +++++++++++to 0.00017186
+Heightened Def Con from 0.00017186 +++to 0.000171862
+Heightened Def Con from 0.000171862 +++++++++to 0.000171863
+Heightened Def Con from 0.000171863 +++++++++++++to 0.000171863
+Heightened Def Con from 0.000171863 +to 0.000171863
+Heightened Def Con from 0.000171863 +++++++to 0.000171864
+Heightened Def Con from 0.000171864 +++to 0.000171864
+Heightened Def Con from 0.000171864 +to 0.000171865
+Heightened Def Con from 0.000171865 +++++++++++++to 0.000171866
+Heightened Def Con from 0.000171866 +++++++++++++to 0.000171867
+Heightened Def Con from 0.000171867 ++++++++to 0.000171867
+Heightened Def Con from 0.000171867 to 0.000171867
+Heightened Def Con from 0.000171867 +++++++++++++to 0.000171869
+Heightened Def Con from 0.000171869 +++++++++++++to 0.00017187
+Heightened Def Con from 0.00017187 ++++++++++++++to 0.000171874
+Heightened Def Con from 0.000171874 ++++++++++++++to 0.000171878
+Heightened Def Con from 0.000171878 +++++++++++++to 0.000171881
+Heightened Def Con from 0.000171881 +++++to 0.000171882
+Heightened Def Con from 0.000171882 to 0.000171883
+Heightened Def Con from 0.000171883 ++++++++++to 0.000171886
+Heightened Def Con from 0.000171886 to 0.000171888
+Heightened Def Con from 0.000171888 to 0.000171888
+Heightened Def Con from 0.000171888 +to 0.00017189
+Heightened Def Con from 0.00017189 +to 0.000171893
+Heightened Def Con from 0.000171893 +to 0.000171894
+Heightened Def Con from 0.000171894 to 0.000171894
+Heightened Def Con from 0.000171894 +to 0.000171897
+Heightened Def Con from 0.000171899 to 0.0001719
+Heightened Def Con from 0.000171901 +to 0.000171902
+
+Date: Fri Nov 11 05:28:16 2022
+Total elapsed time: 6.998 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 153104
+traniter = 151717
+tranpoints = 46118
+accept = 31094
+rejected = 15264
+matrix size = 165
+fillins = 522
+solver = Normal
+Thread vector: 27.3/17.6[4] 3.7/2.9[4] 14.2/6.2[4] 0.7/2.5[1]  2592/500
+Matrix Compiler1: 52.72 KB object code size  24.4/18.6/[8.0]
+Matrix Compiler2: 20.71 KB object code size  5.5/4.1/[1.1]
+

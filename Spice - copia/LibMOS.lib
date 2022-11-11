@@ -1,0 +1,133 @@
+* PSpice Model Editor - Version 9.2.1
+*$
+.SUBCKT LibMOS G D S
+*********************************************************************
+*Note:                                                              *
+* Althought models can be a useful tool in evaluating device        *
+* performance, they cannot model exact device performance           *
+* under all conditions, nor are they intended to replace            *
+* bread boarding for final verification. Therefore IXYS does        *
+* not assume any liability arsing from their use.  IXYS reserves    *
+* the right to change models without prior notice. The Pspice model *
+* does not constitute product data sheet. Designer should refer to  *
+* the data sheet to guranteed the limit and specification.          *
+*********************************************************************
+** model generated on August 3, 2020(G)
+* Node 1 -> Drain
+* Node 2 -> Gate
+* Node 3 -> Source
+R_ds D 9 0.0031
+R_S S11 S 0.0001
+M111 9 G S11 S11 MM111 L=1u W=1u
+X_M  G 9 S11 220N20X3_CH
+.MODEL MM111 NMOS LEVEL=1
++IS=1e-32
++VTO=2.50
++LAMBDA=8.88605e-04
++KP=0.001
+X_dg 9 G C_dg_220N20X3
+X_ds 9 S C_ds_220N20X3
+X_d D S D_220N20X3
+
+
+.ENDS
+*$
+.SUBCKT D_220N20X3  D S
+D_1 S1 Dn BD1
+*X_ds Dn S1 C_ds_220N20X3
+V_S1 S S1 0
+V_S2 Dn D 0
+L_d VA 0 11n
+R_D VA 0 0.1
+G_s VA 0 value={1*I(V_S1)}
+R_g VA 0 10e6
+G_d D S value={1.2*V(VA)}
+R_dd D S 1000e6
+.MODEL BD1 D
++ IS=3.8512E-8
++ N=1.2913
++ RS=1.4914E-3
++ IKF=73.678
++ CJO=3.725E-12
++ M=1.3391
++ VJ=3.7298
++ ISR=10.130E-9
++ BV=199.54
++ IBV=787.34E-6
+.ENDS
+*$
+.subckt 220N20X3_CH gg1 dd1 ss2
+.FUNC GB_1st(X1) {-0.1*pwr(Gate_Lim(X1),2)+2.15*Gate_Lim(X1)-2.8}
+.FUNC GB_2nd(X2) {0.15*Gate_lim(X2)+7.2}
+.FUNC GB_SEL_A(X4) {IF(X4<8,Gate_Lim(X4),GB_SEL_B(X4))}
+.FUNC GB_SEL_B(X5) {IF(X5<10,GB_1st(X5),GB_2nd(X5))}
+.FUNC Gate_Lim(X8) {limit(X8,4.4,20)}
+.FUNC Gate_Sh(X9) {limit(-0.15*X9+2,0.60,0.95)}
+G_ch dd1 ss1 Value={IF((V(dd1)-V(ss2))<0, (-V(Vch_Postive)), V(Vch_Postive))}
+E_ch1 Vch_postive 0 Value={(1+0.00015*abs(V(dd1,ss2)))*0.5*95*PWR
++((GB_SEL_A(V(gg1,ss2))-4.4),2)*(1-exp(-(Gate_Sh(V(gg1,ss2)))*abs(V(dd1)-V(ss2))))}
+R_dd dd1 ss2 100e6
+R_ss ss1 ss2 0.00001
+.ends
+**0.95
+**0.65
+*$
+.SUBCKT C_ds_220N20X3 Ps_d Ns_s
+*.param soft_sw_cds=1
+.param CdsAdj=2
+*R_ee2 Ps_d Ps_d1 1e-3
+G_Cds Ps_d Ns_s value={(V(V_Sel))*I(V_set)}
+E_set V_CurrentP V_CurrentN Ps_d Ns_s 1
+C_set V_CurrentP 0 1e-12
+V_set 0 V_CurrentN 0
+E_LowVH LowVH 0 TABLE {abs(V(Ps_d)-V(Ns_s))}=(
++(1,36758)
++(3,25071)
++(6,18848)
++(10,13959)
++(15,10143)
++(20,5228)
++(35,1368)
++(60,996)
++(80,850)
++(100,756)
++(120,690)
++(150,610)
++(200,543))
+E_constant Vconst 0 TABLE {Max(V(Ps_d)-V(Ns_s),0)}=(
++(20,335))
+.FUNC Factory(X2) {120*pwr(25/abs(X2),0.2)}
+E_Sel V_Sel 0 value={IF(V(Ps_d,Ns_s)>0, V(LowVH), V(LowVH))}
+*E_Sel V_Sel 0 value={V(LowVH)}
+.ENDS
+*$
+.SUBCKT C_dg_220N20X3 DP GN
+*.param soft_sw_cds=1
+.param CdsAdj=2
+R_ee DP DPs_d 1e-3
+R_gg DNg_g GN 1e-3
+G_Cds DPs_d DNg_g value={(V(V_Sel))*I(V_set)}
+E_set V_CurrentP V_CurrentN DPs_d DNg_g 1
+C_set V_CurrentP 0 1e-12
+V_set 0 V_CurrentN 0
+E_LowVH LowVH 0 TABLE {abs(V(DP)-V(GN))}=(
++(1,4242)
++(3,1929)
++(6,1151)
++(10,640)
++(15,256)
++(20,31)
++(35,7)
++(60,10)
++(80,14)
++(100,19)
++(120,25)
++(150,34)
++(200,56))
+E_constant Vconst 0 TABLE {Max(V(DP)-V(GN),0)}=(
++(0,700))
+.FUNC FactoryCds(X2) {80*pwr(25/abs(X2),0.2)}
+*E_Sel V_Sel 0 value={IF(V(DP,GN)<25, V(LowVH), FactoryCds(V(DP,GN)))}
+E_Sel V_Sel 0 value={IF(V(DP,GN)<0, 1.1*V(LowVH),1.1*V(LowVH))}
+.ENDS
+*$

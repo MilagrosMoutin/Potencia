@@ -1,0 +1,39 @@
+* C:\Users\Milagros\Documents\GitHub\Potencia\Spice\Circuit.asc
+XX1 vgad A 0 mymos
+RgAd vgad N004 {Rgval}
+VgAd N004 0 0
+XX2 vgau vdc A mymos
+RgAu vgau N001 {Rgval}
+VgAu N001 A PULSE(0 15 0 1n 1n 7u 42.666u)
+XX3 vgbd B 0 mymos
+RgBd N005 vgbd {Rgval}
+VgBd N005 0 15
+VDC vdc 0 96
+XX4 vgbu vdc B mymos
+RgBu N002 vgbu {Rgval}
+VgBu N002 B 0
+RL B N003 0.1
+LL A N003 36µ
+Csnub A B {Csnubber} Rser=1 Rpar=0
+
+* block symbol definitions
+.subckt mymos G D S
+R_gss N001 G 5
+R_ds Di D 3
+R_ss S Si 3
+L_gss G N001 5n
+L_dss Di D 3n
+L_s S Si 3n
+R_gs Gi N001 1.6
+Cin Gi Si 10.5n
+C1 G S 10n Rser=100m
+XU2 Gi Di Si LibMOS
+.inc LibMOS.lib
+.ends mymos
+
+.tran 0 480u 466u
+*.step param Csnubber list 100n 220n
+.param Rgval=15 Csnubber=1n
+.lib LibMOS.lib
+.backanno
+.end

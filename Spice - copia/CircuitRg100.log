@@ -1,0 +1,148 @@
+Circuit: * C:\Users\Milagros\Documents\GitHub\Potencia\Spice - copia\CircuitRg100.asc
+
+WARNING: Less than two connections to node X1:U2:_DG:VCONST.  This node is used by E:X1:U2:_DG:_CONSTANT.
+WARNING: Less than two connections to node X1:U2:_DS:VCONST.  This node is used by E:X1:U2:_DS:_CONSTANT.
+WARNING: Less than two connections to node X2:U2:_DG:VCONST.  This node is used by E:X2:U2:_DG:_CONSTANT.
+WARNING: Less than two connections to node X2:U2:_DS:VCONST.  This node is used by E:X2:U2:_DS:_CONSTANT.
+WARNING: Less than two connections to node X3:U2:_DG:VCONST.  This node is used by E:X3:U2:_DG:_CONSTANT.
+WARNING: Less than two connections to node X3:U2:_DS:VCONST.  This node is used by E:X3:U2:_DS:_CONSTANT.
+WARNING: Less than two connections to node X4:U2:_DG:VCONST.  This node is used by E:X4:U2:_DG:_CONSTANT.
+WARNING: Less than two connections to node X4:U2:_DS:VCONST.  This node is used by E:X4:U2:_DS:_CONSTANT.
+Instance "m:x4:u2:111": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:x4:u2:111": Width narrower than recommended for a level 1 MOSFET.
+Instance "m:x3:u2:111": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:x3:u2:111": Width narrower than recommended for a level 1 MOSFET.
+Instance "m:x2:u2:111": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:x2:u2:111": Width narrower than recommended for a level 1 MOSFET.
+Instance "m:x1:u2:111": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:x1:u2:111": Width narrower than recommended for a level 1 MOSFET.
+Early termination of direct N-R iteration.
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+Gmin = 1.07374
+vernier = 0.5
+vernier = 0.25
+vernier = 0.125
+Gmin = 0.696858
+vernier = 0.0625
+vernier = 0.03125
+vernier = 0.015625
+vernier = 0.0078125
+Gmin = 0.692794
+vernier = 0.00390625
+vernier = 0.00195313
+vernier = 0.000976563
+vernier = 0.000488281
+Gmin = 0.692033
+Gmin = 0
+Gmin stepping succeeded in finding the operating point.
+
+Ignoring empty pin current: Ix(u2:g)
+Ignoring empty pin current: Ix(u2:d)
+Ignoring empty pin current: Ix(u2:s)
+Ignoring empty pin current: Ix(u2:_m:gg1)
+Ignoring empty pin current: Ix(u2:_m:dd1)
+Ignoring empty pin current: Ix(u2:_m:ss2)
+Ignoring empty pin current: Ix(u2:_dg:dp)
+Ignoring empty pin current: Ix(u2:_dg:gn)
+Ignoring empty pin current: Ix(u2:_ds:ps_d)
+Ignoring empty pin current: Ix(u2:_ds:ns_s)
+Ignoring empty pin current: Ix(u2:_d:d)
+Ignoring empty pin current: Ix(u2:_d:s)
+Ignoring empty pin current: Ix(u2:g)
+Ignoring empty pin current: Ix(u2:d)
+Ignoring empty pin current: Ix(u2:s)
+Ignoring empty pin current: Ix(u2:_m:gg1)
+Ignoring empty pin current: Ix(u2:_m:dd1)
+Ignoring empty pin current: Ix(u2:_m:ss2)
+Ignoring empty pin current: Ix(u2:_dg:dp)
+Ignoring empty pin current: Ix(u2:_dg:gn)
+Ignoring empty pin current: Ix(u2:_ds:ps_d)
+Ignoring empty pin current: Ix(u2:_ds:ns_s)
+Ignoring empty pin current: Ix(u2:_d:d)
+Ignoring empty pin current: Ix(u2:_d:s)
+Heightened Def Con from 4.6875e-012 to 1.1e-009
+Heightened Def Con from 0.000344485 +to 0.000344485
+Heightened Def Con from 0.000344485 to 0.000344485
+Heightened Def Con from 0.000344485 +to 0.000344486
+Heightened Def Con from 0.000344488 to 0.000344489
+Heightened Def Con from 0.000344493 to 0.000344494
+Heightened Def Con from 0.000344495 +to 0.000344496
+Heightened Def Con from 0.000344496 to 0.000344497
+Heightened Def Con from 0.000344505 +to 0.000344506
+Heightened Def Con from 0.000344506 to 0.000344507
+Heightened Def Con from 0.000344507 +to 0.000344508
+Heightened Def Con from 0.000344508 +++to 0.000344509
+Heightened Def Con from 0.00034451 +to 0.000344511
+Heightened Def Con from 0.000344511 +++++++++++++to 0.000344511
+Heightened Def Con from 0.000344511 +++++++to 0.000344513
+Heightened Def Con from 0.000344514 to 0.000344515
+Heightened Def Con from 0.000344515 to 0.000344516
+Heightened Def Con from 0.000344516 ++to 0.000344517
+Heightened Def Con from 0.000344519 ++to 0.00034452
+Heightened Def Con from 0.00034452 to 0.000344521
+Heightened Def Con from 0.000344522 +to 0.000344523
+Heightened Def Con from 0.000344523 +to 0.000344524
+Heightened Def Con from 0.000344524 +++to 0.000344524
+Heightened Def Con from 0.000344524 to 0.000344526
+Heightened Def Con from 0.000344526 +to 0.000344527
+Heightened Def Con from 0.000344527 ++++++to 0.000344528
+Heightened Def Con from 0.000344528 +to 0.000344529
+Heightened Def Con from 0.000344531 to 0.000344532
+Heightened Def Con from 0.000344532 to 0.000344532
+Heightened Def Con from 0.000344532 ++to 0.000344533
+Heightened Def Con from 0.000344533 +to 0.000344533
+Heightened Def Con from 0.000344533 +++to 0.000344534
+Heightened Def Con from 0.000344536 ++++++++++++to 0.000344539
+Heightened Def Con from 0.000344539 +to 0.000344539
+Heightened Def Con from 0.000344539 +++++++to 0.00034454
+Heightened Def Con from 0.00034454 +to 0.000344541
+Heightened Def Con from 0.000344541 ++++++++++to 0.000344546
+Heightened Def Con from 0.000344546 ++++to 0.000344547
+Heightened Def Con from 0.000344547 +++++++++++++to 0.00034455
+Heightened Def Con from 0.00034455 ++++++++++to 0.000344553
+Heightened Def Con from 0.000344553 ++++++++++to 0.000344554
+Heightened Def Con from 0.000344554 +++++++++++++to 0.000344559
+Heightened Def Con from 0.000344559 ++++++++++to 0.00034456
+Heightened Def Con from 0.00034456 ++++++++++++to 0.000344565
+Heightened Def Con from 0.000344565 +to 0.000344567
+Heightened Def Con from 0.000344567 +++++++++++++to 0.000344573
+Heightened Def Con from 0.000344573 +++++++++++to 0.000344577
+Heightened Def Con from 0.000344577 to 0.000344577
+Heightened Def Con from 0.000344577 ++++++++++to 0.000344578
+Heightened Def Con from 0.000344578 to 0.000344579
+Heightened Def Con from 0.000344579 +++++++++++to 0.000344582
+Heightened Def Con from 0.000344582 ++++++to 0.000344584
+Heightened Def Con from 0.000344584 +++++++++++to 0.000344589
+Heightened Def Con from 0.000344589 ++++++++to 0.00034459
+Heightened Def Con from 0.00034459 ++++++++++to 0.000344591
+Heightened Def Con from 0.000344591 ++++to 0.000344592
+Heightened Def Con from 0.000344592 +++++++++to 0.000344595
+Heightened Def Con from 0.000344595 +to 0.000344595
+Heightened Def Con from 0.000344595 +to 0.000344596
+Heightened Def Con from 0.000344596 ++++to 0.000344596
+Heightened Def Con from 0.000344596 +++to 0.000344598
+Heightened Def Con from 0.0003446 to 0.000344601
+Heightened Def Con from 0.000344601 +to 0.000344602
+Heightened Def Con from 0.000349311 +++++to 0.000349312
+Heightened Def Con from 0.000349312 ++to 0.000349316
+
+Date: Fri Nov 11 05:30:23 2022
+Total elapsed time: 13.813 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 233768
+traniter = 232370
+tranpoints = 71925
+accept = 47993
+rejected = 24263
+matrix size = 165
+fillins = 522
+solver = Normal
+Thread vector: 79.0/24.4[4] 7.1/4.7[4] 11.3/7.1[4] 0.8/2.7[1]  2592/500
+Matrix Compiler1: 52.72 KB object code size  23.6/11.7/[6.9]
+Matrix Compiler2: 20.71 KB object code size  5.7/4.5/[1.2]
+
