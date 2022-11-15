@@ -1,0 +1,42 @@
+* C:\Users\Milagros\Documents\GitHub\Potencia\Spice\Circuit-loqueanda.asc
+XX1 vgad A 0 mymos
+XX2 vgau vdc A mymos
+XX3 vgbd B 0 mymos
+VDC vdc 0 96
+XX4 vgbu vdc B mymos
+LL A N003 36µ
+VgAu N001 A PULSE(0 15 0 1n 1n 7u 42.666u)
+VgAd N004 0 0
+VgBu N002 B 0
+VgBd N005 0 15
+R1 vgau N001 {Rgval}
+R2 N002 vgbu {Rgval}
+R3 vgad N004 {Rgval}
+R4 N005 vgbd {Rgval}
+Csnub1 A N006 {Csnubber}
+Rsnub1 N006 0 {Rsnub}
+Csnub2 B N007 {Csnubber}
+R7 B N003 0.2
+R5 N007 0 {Rsnub}
+
+* block symbol definitions
+.subckt mymos G D S
+R_gss N001 G 5
+R_ds Di D 3
+R_ss S Si 3
+L_gss G N001 5n
+L_dss Di D 3n
+L_s S Si 3n
+R_gs Gi N001 1.6
+Cin Gi Si 10.5n
+XU2 Gi Di Si LibMOS
+C1 N002 S {Cgsnubber}
+R1 G N002 {Rgsnubber}
+.inc LibMOS.lib
+.ends mymos
+
+.tran 0 480u 466u
+.param Rgval=10 Csnubber=10n Rsnub=0.5 Cgsnubber=10n Rgsnubber=500m
+.lib LibMOS.lib
+.backanno
+.end

@@ -1,0 +1,93 @@
+Circuit: * C:\Users\Milagros\Documents\GitHub\Potencia\Spice\Circuit-loqueanda.asc
+
+WARNING: Less than two connections to node X1:U2:_DG:VCONST.  This node is used by E:X1:U2:_DG:_CONSTANT.
+WARNING: Less than two connections to node X1:U2:_DS:VCONST.  This node is used by E:X1:U2:_DS:_CONSTANT.
+WARNING: Less than two connections to node X2:U2:_DG:VCONST.  This node is used by E:X2:U2:_DG:_CONSTANT.
+WARNING: Less than two connections to node X2:U2:_DS:VCONST.  This node is used by E:X2:U2:_DS:_CONSTANT.
+WARNING: Less than two connections to node X3:U2:_DG:VCONST.  This node is used by E:X3:U2:_DG:_CONSTANT.
+WARNING: Less than two connections to node X3:U2:_DS:VCONST.  This node is used by E:X3:U2:_DS:_CONSTANT.
+WARNING: Less than two connections to node X4:U2:_DG:VCONST.  This node is used by E:X4:U2:_DG:_CONSTANT.
+WARNING: Less than two connections to node X4:U2:_DS:VCONST.  This node is used by E:X4:U2:_DS:_CONSTANT.
+Instance "m:x4:u2:111": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:x4:u2:111": Width narrower than recommended for a level 1 MOSFET.
+Instance "m:x3:u2:111": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:x3:u2:111": Width narrower than recommended for a level 1 MOSFET.
+Instance "m:x2:u2:111": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:x2:u2:111": Width narrower than recommended for a level 1 MOSFET.
+Instance "m:x1:u2:111": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:x1:u2:111": Width narrower than recommended for a level 1 MOSFET.
+Early termination of direct N-R iteration.
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Increasing initial diagonal Gmin to 100
+Gmin = 100
+Gmin = 10.7374
+Gmin = 1.15292
+vernier = 0.5
+vernier = 0.25
+vernier = 0.125
+Gmin = 0.831384
+vernier = 0.0625
+vernier = 0.03125
+vernier = 0.015625
+vernier = 0.0078125
+Gmin = 0.835998
+vernier = 0.00390625
+vernier = 0.00195313
+vernier = 0.000976563
+vernier = 0.000488281
+Gmin = 0.835488
+Gmin = 0
+Gmin stepping failed
+
+Starting source stepping with srcstepmethod=0
+Source Step = 3.0303%
+Source Step = 33.3333%
+Source Step = 63.6364%
+Source Step = 93.9394%
+Source stepping succeeded in finding the operating point.
+
+Ignoring empty pin current: Ix(u2:g)
+Ignoring empty pin current: Ix(u2:d)
+Ignoring empty pin current: Ix(u2:s)
+Ignoring empty pin current: Ix(u2:_m:gg1)
+Ignoring empty pin current: Ix(u2:_m:dd1)
+Ignoring empty pin current: Ix(u2:_m:ss2)
+Ignoring empty pin current: Ix(u2:_dg:dp)
+Ignoring empty pin current: Ix(u2:_dg:gn)
+Ignoring empty pin current: Ix(u2:_ds:ps_d)
+Ignoring empty pin current: Ix(u2:_ds:ns_s)
+Ignoring empty pin current: Ix(u2:_d:d)
+Ignoring empty pin current: Ix(u2:_d:s)
+Ignoring empty pin current: Ix(u2:g)
+Ignoring empty pin current: Ix(u2:d)
+Ignoring empty pin current: Ix(u2:s)
+Ignoring empty pin current: Ix(u2:_m:gg1)
+Ignoring empty pin current: Ix(u2:_m:dd1)
+Ignoring empty pin current: Ix(u2:_m:ss2)
+Ignoring empty pin current: Ix(u2:_dg:dp)
+Ignoring empty pin current: Ix(u2:_dg:gn)
+Ignoring empty pin current: Ix(u2:_ds:ps_d)
+Ignoring empty pin current: Ix(u2:_ds:ns_s)
+Ignoring empty pin current: Ix(u2:_d:d)
+Ignoring empty pin current: Ix(u2:_d:s)
+Heightened Def Con from 4.6875e-012 to 1.1e-009
+
+Date: Tue Nov 15 15:41:22 2022
+Total elapsed time: 2.778 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 44839
+traniter = 43036
+tranpoints = 16255
+accept = 11690
+rejected = 4566
+matrix size = 171
+fillins = 675
+solver = Normal
+Thread vector: 33.2/15.5[4] 6.3/3.4[4] 7.9/5.3[4] 0.7/3.8[1]  2592/500
+Matrix Compiler1: 85.82 KB object code size  27.0/19.7/[8.9]
+Matrix Compiler2: 23.47 KB object code size  3.4/5.1/[1.5]
+

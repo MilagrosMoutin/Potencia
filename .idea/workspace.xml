@@ -38,7 +38,8 @@
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)"
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "vcs.Git"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -80,6 +81,8 @@
       <updated>1668024558616</updated>
       <workItem from="1668024561885" duration="1585000" />
       <workItem from="1668029655808" duration="42093000" />
+      <workItem from="1668162903020" duration="21000" />
+      <workItem from="1668162938141" duration="6811000" />
     </task>
     <servers />
   </component>
